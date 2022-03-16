@@ -35,7 +35,6 @@ class LoginScreen extends StatelessWidget {
                 Text('Welcome Back !',style: TextStyle(fontSize: 26),),
                 Text('To Continue, Login Now ',style: TextStyle(fontSize: 14,color: Colors.black54),),
                 SizedBox(height: MediaQuery.of(context).size.height / 3,),
-
               ],
             ),
           )
