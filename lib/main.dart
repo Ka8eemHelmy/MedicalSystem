@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:hospital_medical/shared/themes/light_theme.dart';
 import 'package:hospital_medical/views/screens/splash_screen.dart';
 
-void main() {
+import 'shared/network/local/cache_helper.dart';
+import 'shared/network/remote/dio-helper.dart';
+
+void main() async {
+  //This to ensure that all Widget of Application is ready to run.
+  WidgetsFlutterBinding.ensureInitialized();
+  //Initialize DioHelper and CashHelper to Run.
+  await DioHelper.init();
+  //await CacheHelper.init();
+  //Run the App
   runApp(const MyApp());
 }
 
