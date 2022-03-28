@@ -94,7 +94,8 @@ class LoginScreen extends StatelessWidget {
                             ],
                           ),
                           type: TextInputType.number,
-                          status: TextInputAction.next, validate: (value) {
+                          status: TextInputAction.next,
+                          validate: (value) {
                         if (value!.isEmpty && value.trim().isEmpty) {
                           return "Please, Enter Your Phone !";
                         } else if (value.length != 11) {
